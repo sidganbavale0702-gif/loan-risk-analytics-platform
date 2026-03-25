@@ -1,145 +1,136 @@
-Credit Risk Analytics: From Risk Scoring to Decision System
+## 📊 Credit Risk Analytics: From Risk Scoring to Decision System
 
-🔹 Project Overview
-   This project implements an end-to-end credit risk analytics system, evolving from a traditional risk analysis dashboard to a financial decision-making system.
+End-to-end credit risk analytics project evolving from a traditional risk dashboard to a financial decision-making system.
 
-   Version 1 focused on risk segmentation and KPI analysis, while Version 2 extends it into predictive modeling, financial risk estimation, and loan decision support.
+* Predict default probability (PD)
+* Estimate financial risk (Expected Loss)
+* Enable loan approval decisions
 
-   The goal is to transform raw banking data into actionable insights for credit risk management.
+---
 
-🔹 Business Objective
-    To build a data-driven credit risk system that enables financial institutions to:
+## 🚀 Key Highlights
 
-  - Identify high-risk customers
-  - Predict loan default probability
-  - Quantify financial exposure
-  - Improve loan approval and portfolio risk decisions
+* Built end-to-end pipeline using SQL, Python, and Tableau
+* Developed logistic regression model for default prediction
+* Implemented financial risk modeling (PD × LGD × EAD)
+* Estimated portfolio risk (~₹25M+ expected loss)
+* Designed loan decision system (Approve / Review / Reject)
 
-🔴 RISK ANALYTICS SYSTEM
+---
 
-🔹 Key Business Insights
-  - Identified high-risk customer segments
-  - Analyzed payment behavior leading to default
-  - Quantified portfolio credit exposure
-  - Built early-warning risk indicators
+## 🎯 Business Objective
 
-🔹 Skills Demonstrated
-    SQL:
-  - Advanced queries
-  - CTEs
-  - Window functions
-  - Data modeling (Star Schema)
+To build a data-driven credit risk system that enables financial institutions to:
 
-  Python:
-  - Data engineering
-  - Feature engineering
-  - Risk score modeling
+* Identify high-risk customers
+* Predict loan default probability
+* Quantify financial exposure
+* Improve loan approval and portfolio risk decisions
 
-  Tableau:
-  - KPI dashboards
-  - Executive reporting
+---
 
-🔹 Data Engineering
-    Raw Tables:
-  - application_train
-  - previous_application
-  - bureau
-  - installments_payments
+## 🔹 Version 1: Risk Analytics Dashboard
 
-  Staging Tables:
-  - stg_application_train
-  - stg_previous_application
-  - stg_bureau
-  - stg_installments_payments
+**Focus:**
 
-  Star Schema:
-  - Dimension Tables: dim_customer, dim_contract
-  - Fact Tables: fact_application_train, fact_previous_application
+* Risk segmentation
+* Default rate analysis
 
-🔹 Risk Scoring Model
-   A composite risk score was engineered using behavioral and financial features:
+**Key Features:**
 
-  Risk Score =
-  0.4 × Default History +
-  0.3 × Payment Delay +
-  0.2 × Credit Exposure +
-  0.1 × Credit Burden
+* Risk category distribution (Low / Medium / High)
+* Default rate by risk segment
+* High-risk customer identification
+* KPI dashboard
 
-🔹 KPIs Built
-  - Total Customers
-  - Default Rate %
-  - Payment Delay Metrics
-  - Late Payment Frequency
-  - Credit Exposure
-  - Active Credit Burden
+---
 
+## 🔹 Version 2: Credit Risk Decision System (Final)
 
-🔹 Output
-  Generated dataset:
-  customer_risk_dataset.csv
+**Focus:**
 
-  Used for Tableau dashboards
+* Predictive modeling
+* Financial risk estimation
+* Decision-based analytics
 
-🔴 CREDIT RISK DECISION SYSTEM
+**Key Features:**
 
-🔹 Objective
-  Extend risk analysis into a decision-making system by:
+* Default probability prediction using Logistic Regression
+* Expected Loss calculation
+* Loan decision segmentation (Approve / Review / Reject)
+* Portfolio risk analysis
 
-  - Predicting default probability (PD)
-  - Estimating financial loss
-  - Enabling loan approval decisions
+---
 
-🔹 Machine Learning
-  Model: Logistic Regression
+## 📉 Financial Modeling
 
-  Purpose:
-  - Predict Probability of Default (PD)
+**Expected Loss = PD × LGD × EAD**
 
-🔹 Financial Modeling
-  PD  = Probability of Default
-  LGD = Loss Given Default (assumed 50%)
-  EAD = Exposure at Default
+* **PD (Probability of Default):** Predicted using ML model
+* **LGD (Loss Given Default):** Assumed 50%
+* **EAD (Exposure at Default):** Total exposure amount
 
-  Expected Loss = PD × LGD × EAD
+---
 
-🔹 Decision Framework
-  Customers are segmented into:
+## 📊 Dashboard
 
-  - Approve → Low Risk
-  - Review → Medium Risk
-  - Reject → High Risk
+### Version 1:
 
-🔹 Key Results
-  - Total Portfolio Risk ≈ ₹25M+
-  - Only ~14% customers eligible for approval
-  - Majority of losses driven by high-risk segment
-  - Review group represents largest population
+* Risk category distribution
+* Default rate analysis
+* High-risk customer identification
 
-🔹 Dashboard Outputs
+### Version 2:
 
-🔹 Version 1 Dashboard
-  Risk category distribution
-  Default rate analysis
-  High-risk customer identification
-  
-🔹 Version 2 Dashboard (Final)
-  Loan decision distribution
-  Portfolio risk (Expected Loss)
-  Financial impact by segment
-  Decision-driven insights
+* Loan decision distribution
+* Portfolio risk (Expected Loss)
+* Financial impact by segment
+* Decision-driven insights
 
-🔹 Tech Stack
-    SQL | Python | Pandas | NumPy | Scikit-learn | Tableau | MySQL
+---
 
-🔹 Project Workflow
-  SQL Data Extraction →
-  Data Cleaning (Python) →
-  Feature Engineering →
-  Risk Scoring →
-  Machine Learning →
-  Financial Modeling →
-  Dashboard Visualization
+## 📌 Key Insights
 
-🔹 Project Outcome
-Developed a production-style credit risk analytics system that evolved into a financial decision-making tool, enabling data-driven lending strategies and portfolio risk optimization.
+* High-risk customers (Reject segment) contribute majority of portfolio losses
+* Only ~14% customers qualify for direct approval
+* Review segment represents largest customer base requiring further evaluation
+* Risk-based decision strategy significantly reduces financial exposure
+
+---
+
+## 🏗️ Data Architecture
+
+* Raw Tables: application_train, bureau, previous_application, installments_payments
+* Staging Tables: cleaned and transformed datasets
+* Star Schema: fact and dimension tables for analytics
+
+---
+
+## 🔄 Project Workflow
+
+SQL Data Extraction → Data Cleaning (Python) → Feature Engineering →
+Risk Scoring → Machine Learning → Financial Modeling → Dashboard Visualization
+
+---
+
+## 🛠️ Tech Stack
+
+SQL | Python | Pandas | NumPy | Scikit-learn | Tableau | MySQL
+
+---
+
+## 📁 Project Structure
+
+/data
+/sql
+/python
+/tableau
+/screenshots
+
+---
+
+## ✅ Outcome
+
+Developed a credit risk decision system that enables data-driven loan approvals and portfolio risk optimization.
+
 
