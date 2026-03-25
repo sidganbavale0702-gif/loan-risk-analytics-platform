@@ -16,6 +16,7 @@ Credit Risk Analytics: From Risk Scoring to Decision System
   - Improve loan approval and portfolio risk decisions
 
 🔴 RISK ANALYTICS SYSTEM
+
 🔹 Key Business Insights
   - Identified high-risk customer segments
   - Analyzed payment behavior leading to default
@@ -115,6 +116,7 @@ Credit Risk Analytics: From Risk Scoring to Decision System
   - Review group represents largest population
 
 🔹 Dashboard Outputs
+
 🔹 Version 1 Dashboard
   Risk category distribution
   Default rate analysis
