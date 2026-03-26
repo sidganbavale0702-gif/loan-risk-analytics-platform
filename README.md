@@ -87,6 +87,7 @@ To build a data-driven credit risk system that enables financial institutions to
 * Financial impact by segment
 * Decision-driven insights
 
+
 ---
 
 ## 📌 Key Insights
