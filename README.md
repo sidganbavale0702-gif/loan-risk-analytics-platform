@@ -87,6 +87,13 @@ To build a data-driven credit risk system that enables financial institutions to
 * Financial impact by segment
 * Decision-driven insights
 
+## 📷 Dashboard Preview
+
+### Version 1: Risk Analytics Dashboard
+![V1 Dashboard](v1_dashboard.png)
+
+### Version 2: Credit Risk Decision Dashboard
+![V2 Dashboard](v2_dashboard.png)
 
 ---
 
