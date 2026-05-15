@@ -142,3 +142,7 @@ SQL | Python | Pandas | NumPy | Scikit-learn | Tableau | MySQL
 Developed a credit risk decision system that enables data-driven loan approvals and portfolio risk optimization.
 
 
+Dataset Source:
+Home Credit Default Risk Dataset (Kaggle)
+
+
